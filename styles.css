@@ -1,0 +1,136 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic page styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #ffffff;
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #1c1f26;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #61dafb;
+}
+
+/* Key information styles */
+.key-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Key box styles */
+.key-box {
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3a3f47;
+    border: 2px solid #61dafb;
+    min-width: 150px;
+}
+
+/* Keyboard styles */
+.keyboard {
+    margin-top: 20px;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    gap: 10px;
+}
+
+.key {
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #3a3f47;
+    border: 2px solid #61dafb;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.key:hover {
+    background-color: #4b535e;
+}
+
+.key.clicked {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+.key.correct {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.special-key {
+    width: 150px;
+}
+
+/* Reset button styles */
+#reset-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #61dafb;
+    color: #282c34;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+#reset-button:hover {
+    background-color: #52c7ea;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .key-box {
+        font-size: 16px;
+        padding: 10px;
+        min-width: 100px;
+    }
+
+    .key {
+        font-size: 14px;
+        padding: 8px;
+        max-width: 40px;
+    }
+
+    .special-key {
+        width: 80px;
+    }
+
+    #reset-button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
